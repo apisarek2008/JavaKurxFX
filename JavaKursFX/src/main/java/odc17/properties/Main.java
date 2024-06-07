@@ -16,12 +16,11 @@ public class Main extends Application {
 	public void start(Stage primaryStage) throws Exception {
 		FXMLLoader loader = new FXMLLoader(this.getClass().getResource("/fxml/odc17/properties.fxml"));
 		Pane pane = loader.load();
-		Scene scene = new Scene (pane, 400, 400);
+		Scene scene = new Scene(pane, 400, 400);
 		primaryStage.setScene(scene);
 		primaryStage.setTitle("Properties");
 		primaryStage.show();
-		
-		
+
 	}
 
 }
