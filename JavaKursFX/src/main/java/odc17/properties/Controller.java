@@ -22,14 +22,14 @@ public class Controller {
 
 	@FXML
 	public void writeAct() {
-		lblLabelID.setText(txtFieldID.getText());
-		person.setName(txtFieldID.getText());
+		
 	}
 	
 	private Person person = new Person();
 	
 	@FXML
 	public void initialize() {
-		
+		txtFieldID.textProperty().bindBidirectional(person.getPropertytxtField());
+		lblLabelID.textProperty().bind(person.getPropertytxtField());
 	}
 }

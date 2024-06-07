@@ -1,15 +1,20 @@
 package odc17.properties;
 
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
+
 public class Person {
 
-	private String name = "John";
+	private StringProperty propertytxtField = new SimpleStringProperty(this,"nameProperty", "John Snow");
 
-	public String getName() {
-		return name;
+	public StringProperty getPropertytxtField() {
+		return propertytxtField;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setPropertytxtField(StringProperty propertytxtField) {
+		this.propertytxtField = propertytxtField;
 	}
+	
+	
 	
 }
