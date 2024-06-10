@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="267.0" prefWidth="441.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="odc19.bind.exmpl.Controller">
+   <children>
+      <HBox prefHeight="60.0" prefWidth="441.0">
+         <children>
+            <Label text="Imie ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtName">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="lblIsNameOK" text="OK" textFill="#0cdd4f">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="60.0" prefWidth="485.0">
+         <children>
+            <Label text="Nazwisko">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtSurname">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="lblIsSurnameOK" text="OK" textFill="#0cdd4f">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets top="20.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="60.0" prefWidth="485.0">
+         <children>
+            <Label text="Rok urodzenia">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtYearOfBirth" prefHeight="25.0" prefWidth="64.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextField>
+            <CheckBox fx:id="chkConfirm" mnemonicParsing="false" text="Potwierdzam">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </CheckBox>
+            <Label text="Twój wiek to:">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="lblYourAgeIs" text="&quot;&quot;">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="51.0" prefWidth="441.0">
+         <children>
+            <Button fx:id="btnLogin" mnemonicParsing="false" onAction="#btnLoginAct" text="Zaloguj">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets top="10.0" />
+   </padding>
+</VBox>
