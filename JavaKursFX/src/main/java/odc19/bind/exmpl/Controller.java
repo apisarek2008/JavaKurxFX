@@ -37,11 +37,17 @@ public class Controller {
 	void btnLoginAct(ActionEvent event) {
 
 	}
-	
+
 	private PersonViewModel pvm = new PersonViewModel();
-	
+
 	@FXML
 	public void initialize() {
-		
+
+		txtName.textProperty().bindBidirectional(pvm.getTxtNameProperty());
+		txtSurname.textProperty().bindBidirectional(pvm.getTxtSurnameProperty());
+		txtSurname.disabledProperty().and(pvm.getTxtSurnameDisableProperty());
+		lblIsNameOK.disableProperty().bind(pvm.getLblIsNameOK());
+		lblIsSurnameOK.disabledProperty().and(pvm.getLblIsSurnameOK());
+
 	}
 }
