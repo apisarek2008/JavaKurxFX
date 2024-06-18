@@ -11,15 +11,25 @@ import javafx.beans.property.StringProperty;
 
 public class PersonViewModel {
 
+	// textfield name
 	private StringProperty txtNameProperty = new SimpleStringProperty();
+	// txtfielad surname
 	private StringProperty txtSurnameProperty = new SimpleStringProperty();
-	private BooleanProperty txtSurnameDisableProperty = new SimpleBooleanProperty();
+	// włączanie/wyłączanie pola nazwisko
+	private BooleanProperty txtSurnameDisableProperty = new SimpleBooleanProperty(true);
+	// lbl Name OK
 	private BooleanProperty lblIsNameOK = new SimpleBooleanProperty(false);
+	// lbl Surname OK
 	private BooleanProperty lblIsSurnameOK = new SimpleBooleanProperty(false);
-	private StringProperty txtYearOfBirth = new SimpleStringProperty();
+	// txt Rok urodzenia
+	private IntegerProperty txtYearOfBirth = new SimpleIntegerProperty();
+	// chkBox wartość
 	private BooleanProperty chkConfirm = new SimpleBooleanProperty(false);
+	// lbl obliczony wiek
 	private StringProperty lblYourAgeIs = new SimpleStringProperty();
+	// btn
 	private BooleanProperty btnLoginProperty = new SimpleBooleanProperty(false);
+	// aktualny rok
 	private IntegerProperty actualYearProperty = new SimpleIntegerProperty(LocalDate.now().getYear());
 
 	public PersonViewModel() {
@@ -56,11 +66,11 @@ public class PersonViewModel {
 		this.txtSurnameDisableProperty = txtSurnameDisableProperty;
 	}
 
-	public StringProperty getTxtYearOfBirth() {
+	public IntegerProperty getTxtYearOfBirth() {
 		return txtYearOfBirth;
 	}
 
-	public void setTxtYearOfBirth(StringProperty txtYearOfBirth) {
+	public void setTxtYearOfBirth(IntegerProperty txtYearOfBirth) {
 		this.txtYearOfBirth = txtYearOfBirth;
 	}
 

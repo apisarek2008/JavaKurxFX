@@ -43,11 +43,42 @@ public class Controller {
 	@FXML
 	public void initialize() {
 
+		// txtProperty bindujemy z property typu String
 		txtName.textProperty().bindBidirectional(pvm.getTxtNameProperty());
 		txtSurname.textProperty().bindBidirectional(pvm.getTxtSurnameProperty());
+		// diable property bindujemy z property typu boolean  - włącza i wyłącza pole
 		txtSurname.disabledProperty().and(pvm.getTxtSurnameDisableProperty());
 		lblIsNameOK.disableProperty().bind(pvm.getLblIsNameOK());
 		lblIsSurnameOK.disabledProperty().and(pvm.getLblIsSurnameOK());
+		btnLogin.disabledProperty().and(pvm.getBtnLoginProperty());
+		
 
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
